@@ -46,8 +46,8 @@ class ShopCard extends StatelessWidget {
 
           } else if (item.name == "Logout") {
 
-            // final response = await request.logout("http://vincent-suhardi-tutorial.pbp.cs.ui.ac.id/auth/logout");
-            final response = await request.logout("http://localhost:8000/auth/logout"); // localhost
+            final response = await request.logout("https://vincent-suhardi-tutorial.pbp.cs.ui.ac.id/auth/logout");
+            // final response = await request.logout("http://localhost:8000/auth/logout"); // localhost
 
             String message = response(["message"]);
             if (response['status']) {

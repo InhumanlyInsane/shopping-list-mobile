@@ -150,7 +150,8 @@ class _ShopFormPageState extends State<ShopFormPage> {
                         // }));
                         
                         final response = await request.postJson(
-                        "http://localhost:8000/create-flutter/",
+                          "https://vincent-suhardi-tugas.pbp.cs.ui.ac.id/create-flutter/",
+                        // "http://localhost:8000/create-flutter/",
                         jsonEncode(<String, String>{
                             'name': _name,
                             'price': _price.toString(),
